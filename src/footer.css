@@ -1,0 +1,29 @@
+footer {
+    text-align: center;
+}
+
+footer nav {
+    width: 100%;
+}
+
+footer nav ul {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+footer nav li {
+    float: left;
+}
+
+footer nav a {
+    color: darkgray;
+    display: block;
+    font-weight: 600;
+    padding: 1em;
+    text-decoration: none;
+}

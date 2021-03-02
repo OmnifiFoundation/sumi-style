@@ -1,0 +1,25 @@
+main > article.feature {
+    display: grid;
+    min-height: 44vw;
+    padding: 3rem;
+}
+
+main > article.feature > header {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+}
+
+main > article:first-of-type > .media {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    height: 36vw;
+    width: 36vw;
+}
+
+main > article:first-of-type > .content {
+    grid-column: 1;
+    grid-row: 2;
+    height: 100%;
+}

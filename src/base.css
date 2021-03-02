@@ -1,0 +1,6 @@
+@import url('@csstools/normalize.css');
+@import url("./base/base.css");
+@import url("./base/fonts.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./content.css");

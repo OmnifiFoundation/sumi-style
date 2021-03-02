@@ -1,0 +1,31 @@
+
+body > header {
+    align-items: center;
+    display: flex;
+    font-family: var(--header-font);
+    font-weight: 800;
+    justify-content: center;
+    margin-left: var(--horizontal-spacing);
+    margin-right: var(--horizontal-spacing);
+    padding: calc(env(safe-area-inset-top) + var(--vertical-spacing)) env(safe-area-inset-right) 0 env(safe-area-inset-left);
+    text-transform: uppercase;
+}
+
+body > header #org-name {
+    color: hsla(23, 88%, 61%, 1);
+}
+
+body > header > div {
+    float: left;
+    line-height: 3rem;
+}
+
+body > header img {
+    max-height: max(4vw, 4vh);
+    max-width: max(4vw, 4vh);
+}
+
+#outer-circle {
+    fill: none;
+    stroke: var(--foreground-color);
+}
