@@ -10,7 +10,7 @@
     "license": "MIT",
     "repository": "https://git.omnifi.foundation/sumi-style.git",
     "files": [
-        "dist"
+        "lib"
     ],
     "engines": {
         "node": ">=14.0.0"
