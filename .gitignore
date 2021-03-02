@@ -1,3 +1,6 @@
 # Build artifacts
 lib
 node_modules
+
+# Platform files
+.DS_Store
