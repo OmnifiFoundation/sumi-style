@@ -59,7 +59,7 @@ To get started in developing the project it's recommended to use the official [_
 To start with Docker you can use the following command-line statement.
 
 ```
-docker run -it --name "sumi-node" -P -v $(pwd):/src node:14-alpine sh; docker rm "sumi-node"
+docker run -it --name "sumi-node" -P -p 3000:3000 -p 3001:3001 -v $(pwd):/src node:14-alpine sh; docker rm "sumi-node"
 ```
 
 > **Note:** The statement automatically removes the Docker image after use through the post-fixed `docker rm ...` command. If you want to keep the image, remove the post-fix statement and continue.

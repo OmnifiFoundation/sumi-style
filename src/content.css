@@ -15,7 +15,11 @@ main > article.feature {
     color: white;
 }
 
-h1, main > article:nth-child(2n) h2, main > article.post h2 {
+main > article.feature h2 {
+    color: white;
+}
+
+h1, main > article:nth-child(3n) h2, main > article.post h2 {
     background: linear-gradient(135deg, var(--secondary-color), var(--tertiary-color));
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,7 +54,7 @@ main > article:not(.post) a:last-child {
     width: 100%;
 }
 
-main > article:nth-child(2n) a:last-child {
+main > article:nth-child(3n) a:last-child {
     color: hsla(0, 0%, 18%, 1);
 }
 

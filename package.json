@@ -17,10 +17,14 @@
     "engines": {
         "node": ">=14.0.0"
     },
+    "dependencies": {
+        "sumi-icons": "git+ssh://git@github.com/OmnifiFoundation/sumi-icons.git"
+    },
     "devDependencies": {
         "@csstools/normalize.css": "^11.0.1",
+        "browser-sync": "^2.26.14",
         "cssnano": "^4.1.10",
-        "postcss": "^8.2.6",
+        "postcss": "^8.2.8",
         "postcss-cli": "^8.3.1",
         "postcss-import": "^14.0.0",
         "postcss-prefixer": "^2.1.2",
@@ -32,6 +36,7 @@
         "clean": "rm -rf lib",
         "ci": "npx postcss src/*.css --config ./build --dir lib --ext 'min.css' --no-map --env production",
         "compat": "npx postcss src/*.css --config ./build --dir lib --ext 'compat.css' --no-map --env compat",
+        "demo": "browser-sync start --server --files 'demo/*.html, lib/*.css'",
         "dev": "npx postcss src/*.css --config ./build --dir lib --no-map --env development -w",
         "raw": "npx postcss src/*.css --config ./build --dir lib --no-map --env development"
     },

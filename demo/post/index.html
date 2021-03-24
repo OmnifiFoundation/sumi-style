@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Sumi Style Demo</title>
+        <link rel="stylesheet" href="/lib/base.css" />
+        <link rel="stylesheet" href="/lib/handheld.css" media="handheld or (max-width: 960px)" />
+        <link rel="stylesheet" href="/lib/screen.css" media="screen and (min-width: 960px)" />
+    </head>
+    <body>
+        <main>
+            <article class="post">
+                <header>
+                    <h2>Human-Centric View on Data Sovereignty</h2>
+                    {{ with .Params.image }}
+                    <section>
+                        <!--img src="{{ . | absURL }}" alt="post-thumb"-->
+                         
+                    </section>
+                    {{ end }}
+                </header>
+                <section>
+                    <p>
+                        In recent years data sovereignty has been gaining momentum as a foundational driver for various digital projects. If you missed our [introduction into data sovereignty](../introduction-to-data-sovereignty), we'd highly recommend you take the opportunity to read it before going further. We'll not explain data sovereignty in this article. 
+                    </p>
+                    <p>
+                        Predominently the projects fall into one of two categories: 
+                        <ul>
+                            <li>Distributed data storage, often backed by varying approaches to zero-knowledge proofs, and;</li>
+                            <li>Politically-driven programs to develop regional competitive data markets to reduce the dependency on US tech companies.</li>
+                        </ul>
+                    </p>
+                    <p>
+                        Although a lot of conversation has emerged from projects in both of these camps, those conversations rarely discuss human needs when it comes to data sovereignty.
+                    </p>
+                </section>
+            </article>
+        </main>
+    </body>
+</html>
