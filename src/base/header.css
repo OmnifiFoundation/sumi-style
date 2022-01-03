@@ -27,5 +27,13 @@ body > header img {
 
 #outer-circle {
     fill: none;
-    stroke: var(--foreground-color);
+    stroke: var(--foreground-color) !important;
+}
+
+.titlebar > .title {
+    display: none;
+}
+
+.titlebar > svg {
+    height: 5em;
 }

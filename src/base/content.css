@@ -1,0 +1,180 @@
+main > article {
+    padding: 1.8em;
+}
+
+main > article.feature, main > article:nth-child(3n+2) {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07), 
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07),
+                0 64px 128px rgba(0,0,0,0.07);
+    border-radius: 0.3em;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark));
+    color: white;
+}
+
+main > article.feature h2 {
+    color: white;
+}
+
+h1, main > article:nth-child(3n) h2, main > article.post h2 {
+    background: linear-gradient(135deg, var(--secondary-color), var(--tertiary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -webkit-text-fill-color: transparent;
+}
+
+main > article {
+    display: flex;
+    flex-direction: column;
+}
+
+main > article > header {
+    font-size: calc(1rem + .5vw);
+    order: 1;
+}
+
+main > article > .media
+main > article > figure {
+    order: 0;
+}
+
+main > article > .content {
+    order: 2;
+}
+
+main > article:not(.post) a:last-child {
+    color: white;
+    display: inline-block;
+    font-weight: 600;
+    text-align: right;
+    width: 100%;
+}
+
+main > article:nth-child(3n) a:last-child {
+    color: hsla(0, 0%, 18%, 1);
+}
+
+main > article.post {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60ch;
+}
+
+main > section.article-gallery > nav {
+    text-align: center;
+}
+
+main > section.article-gallery > nav > a {
+    color: black;
+}
+
+main > section.article-gallery > ul {
+    --threshold: 45rem;
+    flex-wrap: wrap;
+    gap: 3em 3em;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+main > section.article-gallery > ul > * {
+    flex-basis: calc((var(--threshold) - 100%) * 999);
+    flex-grow: 1;
+}
+
+main section.article-gallery li {
+    
+}
+
+main section.article-gallery article {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07), 
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07),
+                0 64px 128px rgba(0,0,0,0.07);
+    border-radius: 0.3em;
+    background: linear-gradient(135deg, hsl(83, 97%, 30%), hsl(83, 100%, 20%));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    min-height: 28em;
+    padding: 0.3em 1.5em;
+    position: relative;
+}
+
+main section.article-gallery li:nth-child(2n) article {
+    background: linear-gradient(135deg, hsl(203, 76%, 61%), hsl(203, 70%, 48%));
+}
+
+main section.article-gallery li:nth-child(3n)  article {
+    background: linear-gradient(135deg, hsl(263, 70%, 60%), hsl(264, 67%, 40%));
+}
+
+main section.article-gallery:not(#articles) article figure,
+main section.article-gallery article .media {
+    max-height: 16em;
+}
+
+main section.article-gallery article figure img,
+main section.article-gallery article .media img {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+main section.article-gallery li a {
+    color: white;
+    display: block;
+    text-align: right;
+    text-decoration: underline;
+}
+
+#articles > ul > :nth-last-child(n+5), 
+#articles > ul > :nth-last-child(n+5) ~ * {
+    flex-basis: 100%;
+}
+
+main section.article-gallery#articles article > * {
+    z-index: 10;
+}
+
+section.content {
+    flex-grow: 1;
+}
+
+main section.article-gallery#articles figure {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+main section.article-gallery#articles figure img {
+    filter: blur(3px);
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+article section figure {
+    margin: 0;
+    min-width: 24vw;
+}
+
+article section figure img {
+    width: 100%;
+}

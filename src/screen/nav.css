@@ -1,0 +1,12 @@
+header > nav ul {
+    max-height: 100% !important;
+}
+
+header > nav ul li {
+    float: left;
+}
+
+header > nav input {
+    display: none !important;
+}
+

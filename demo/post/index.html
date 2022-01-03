@@ -1,23 +1,92 @@
 <html>
     <head>
         <title>Sumi Style Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="/lib/base.css" />
-        <link rel="stylesheet" href="/lib/handheld.css" media="handheld or (max-width: 960px)" />
+        <link rel="stylesheet" href="/lib/handheld.css" media="screen and (max-width: 960px)" />
         <link rel="stylesheet" href="/lib/screen.css" media="screen and (min-width: 960px)" />
     </head>
     <body>
+        <div id="sprites">
+            <svg width="100%" height="100%" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <symbol id="wordmark-symbol" viewbox="0 0 4096 1920">
+                    <g id="wordmark">
+                    <g id="wordmark1" serif:id="wordmark">
+                        <path d="M874.728,1205.01c-50.431,-0 -95.729,-10.488 -135.895,-31.464c-40.166,-20.975 -71.629,-50.095 -94.39,-87.36c-22.76,-37.265 -34.141,-79.328 -34.141,-126.188c0,-46.86 11.381,-88.923 34.141,-126.188c22.761,-37.265 54.224,-66.385 94.39,-87.36c40.166,-20.976 85.464,-31.464 135.895,-31.464c50.43,0 95.728,10.488 135.894,31.464c40.166,20.975 71.629,50.095 94.39,87.36c22.76,37.265 34.141,79.328 34.141,126.188c-0,46.86 -11.381,88.923 -34.141,126.188c-22.761,37.265 -54.224,66.385 -94.39,87.36c-40.166,20.976 -85.464,31.464 -135.894,31.464Zm-0,-127.862c19.636,0 37.376,-4.797 53.219,-14.392c15.843,-9.596 28.451,-23.207 37.823,-40.836c9.372,-17.628 14.058,-38.269 14.058,-61.922c0,-23.653 -4.686,-44.294 -14.058,-61.922c-9.372,-17.629 -21.98,-31.24 -37.823,-40.836c-15.843,-9.595 -33.583,-14.392 -53.219,-14.392c-19.637,-0 -37.377,4.797 -53.22,14.392c-15.843,9.596 -28.451,23.207 -37.823,40.836c-9.372,17.628 -14.058,38.269 -14.058,61.922c-0,23.653 4.686,44.294 14.058,61.922c9.372,17.629 21.98,31.24 37.823,40.836c15.843,9.595 33.583,14.392 53.22,14.392Z" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <path d="M1682.06,1194.3l-1.339,-213.549l-101.753,171.375l-69.621,-0l-101.754,-164.011l0,206.185l-143.927,-0l-0,-468.602l129.869,0l152.63,249.698l148.614,-249.698l129.87,0l1.338,468.602l-143.927,-0Z" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <path d="M2431.15,725.699l-0,468.602l-129.87,-0l-178.068,-212.879l-0,212.879l-153.969,-0l-0,-468.602l129.869,0l178.069,212.879l-0,-212.879l153.969,0Z" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <rect x="2574.41" y="725.699" width="157.986" height="468.601" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <path d="M3033.64,844.858l0,80.332l195.474,-0l-0,119.158l-195.474,0l0,149.953l-157.985,-0l-0,-468.602l380.906,0l-0,119.159l-222.921,-0Z" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <rect x="3373.71" y="725.699" width="157.986" height="468.601" style="fill:#f38844;fill-rule:nonzero;"/>
+                        <rect id="background" x="294.666" y="300" width="3552.67" height="1320" style="fill:none;"/>
+                    </g>
+                </g>
+                </symbol>
+                <symbol id="foundation-mark-symbol" viewBox="0 0 4096 1920">
+                    <g>
+                        <path d="M332.417,882.673l-0,53.949l131.276,0l0,80.025l-131.276,-0l-0,100.705l-106.1,-0l-0,-314.704l255.809,0l-0,80.025l-149.709,-0Z" style="fill-rule:nonzero;"/>
+                        <path d="M723.548,1124.55c-33.868,-0 -64.289,-7.043 -91.264,-21.13c-26.974,-14.087 -48.104,-33.643 -63.39,-58.67c-15.286,-25.026 -22.928,-53.275 -22.928,-84.745c-0,-31.47 7.642,-59.719 22.928,-84.745c15.286,-25.027 36.416,-44.583 63.39,-58.67c26.975,-14.087 57.396,-21.13 91.264,-21.13c33.868,0 64.29,7.043 91.264,21.13c26.975,14.087 48.105,33.643 63.391,58.67c15.285,25.026 22.928,53.275 22.928,84.745c-0,31.47 -7.643,59.719 -22.928,84.745c-15.286,25.027 -36.416,44.583 -63.391,58.67c-26.974,14.087 -57.396,21.13 -91.264,21.13Zm0,-85.869c13.188,-0 25.102,-3.222 35.742,-9.666c10.64,-6.444 19.107,-15.585 25.401,-27.424c6.294,-11.839 9.441,-25.701 9.441,-41.586c-0,-15.885 -3.147,-29.747 -9.441,-41.586c-6.294,-11.839 -14.761,-20.98 -25.401,-27.424c-10.64,-6.444 -22.554,-9.666 -35.742,-9.666c-13.187,0 -25.101,3.222 -35.741,9.666c-10.64,6.444 -19.107,15.585 -25.401,27.424c-6.294,11.839 -9.441,25.701 -9.441,41.586c-0,15.885 3.147,29.747 9.441,41.586c6.294,11.839 14.761,20.98 25.401,27.424c10.64,6.444 22.554,9.666 35.741,9.666Z" style="fill-rule:nonzero;"/>
+                        <path d="M1135.36,1124.55c-48.254,-0 -85.869,-13.038 -112.843,-39.113c-26.975,-26.076 -40.462,-62.641 -40.462,-109.697l-0,-173.087l106.1,0l-0,169.94c-0,23.078 4.121,39.863 12.363,50.353c8.242,10.49 20.156,15.735 35.741,15.735c15.586,-0 27.499,-5.245 35.742,-15.735c8.242,-10.49 12.363,-27.275 12.363,-50.353l-0,-169.94l104.302,0l-0,173.087c-0,47.056 -13.488,83.621 -40.462,109.697c-26.975,26.075 -64.589,39.113 -112.844,39.113Z" style="fill-rule:nonzero;"/>
+                        <path d="M1692.38,802.648l0,314.704l-87.218,-0l-119.587,-142.966l0,142.966l-103.402,-0l-0,-314.704l87.217,0l119.588,142.966l-0,-142.966l103.402,0Z" style="fill-rule:nonzero;"/>
+                        <path d="M1788.59,802.648l155.104,0c35.067,0 66.013,6.369 92.838,19.107c26.825,12.738 47.655,30.946 62.491,54.624c14.836,23.677 22.254,51.551 22.254,83.621c-0,32.07 -7.418,59.944 -22.254,83.621c-14.836,23.678 -35.666,41.886 -62.491,54.624c-26.825,12.738 -57.771,19.107 -92.838,19.107l-155.104,-0l0,-314.704Zm150.609,231.982c22.778,-0 40.986,-6.519 54.623,-19.557c13.637,-13.038 20.456,-31.395 20.456,-55.073c-0,-23.678 -6.819,-42.035 -20.456,-55.073c-13.637,-13.038 -31.845,-19.557 -54.623,-19.557l-44.509,0l0,149.26l44.509,-0Z" style="fill-rule:nonzero;"/>
+                        <path d="M2414.85,1062.5l-119.587,0l-21.13,54.849l-107.898,-0l137.57,-314.704l104.302,0l137.57,314.704l-109.697,-0l-21.13,-54.849Zm-29.222,-76.428l-30.571,-79.125l-30.572,79.125l61.143,0Z" style="fill-rule:nonzero;"/>
+                        <path d="M2660.32,884.921l-92.163,-0l-0,-82.273l290.426,0l0,82.273l-92.163,-0l-0,232.431l-106.1,-0l-0,-232.431Z" style="fill-rule:nonzero;"/>
+                        <rect x="2930.97" y="802.648" width="106.1" height="314.703" style="fill-rule:nonzero;"/>
+                        <path d="M3298.27,1124.55c-33.868,-0 -64.29,-7.043 -91.264,-21.13c-26.975,-14.087 -48.105,-33.643 -63.391,-58.67c-15.285,-25.026 -22.928,-53.275 -22.928,-84.745c-0,-31.47 7.643,-59.719 22.928,-84.745c15.286,-25.027 36.416,-44.583 63.391,-58.67c26.974,-14.087 57.396,-21.13 91.264,-21.13c33.868,0 64.289,7.043 91.264,21.13c26.974,14.087 48.104,33.643 63.39,58.67c15.285,25.026 22.928,53.275 22.928,84.745c0,31.47 -7.643,59.719 -22.928,84.745c-15.286,25.027 -36.416,44.583 -63.39,58.67c-26.975,14.087 -57.396,21.13 -91.264,21.13Zm-0,-85.869c13.187,-0 25.101,-3.222 35.741,-9.666c10.64,-6.444 19.107,-15.585 25.401,-27.424c6.294,-11.839 9.441,-25.701 9.441,-41.586c0,-15.885 -3.147,-29.747 -9.441,-41.586c-6.294,-11.839 -14.761,-20.98 -25.401,-27.424c-10.64,-6.444 -22.554,-9.666 -35.741,-9.666c-13.188,0 -25.102,3.222 -35.742,9.666c-10.64,6.444 -19.107,15.585 -25.401,27.424c-6.294,11.839 -9.441,25.701 -9.441,41.586c0,15.885 3.147,29.747 9.441,41.586c6.294,11.839 14.761,20.98 25.401,27.424c10.64,6.444 22.554,9.666 35.742,9.666Z" style="fill-rule:nonzero;"/>
+                        <path d="M3869.68,802.648l0,314.704l-87.218,-0l-119.587,-142.966l-0,142.966l-103.403,-0l0,-314.704l87.218,0l119.588,142.966l-0,-142.966l103.402,0Z" style="fill-rule:nonzero;"/>
+                        <rect x="48.58" y="516.757" width="4006.67" height="886.486" style="fill:none;"/>
+                    </g>
+                </symbol>
+                <symbol id="brandmark-symbol" viewBox="0 0 1024 1024">
+                    <circle id="outer-circle" cx="513" cy="512" r="357" style="fill:none;stroke:var(--foreground-color, rgb(235,235,235));stroke-width:89.25px;"/>
+                    <g id="third-person">
+                        <circle id="third-head" cx="646.875" cy="619.875" r="26" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                        <rect id="third-body" x="602.25" y="378.125" width="89.25" height="178.5" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                    </g>
+                    <g id="second-person">
+                        <circle id="second-head" cx="512" cy="404.125" r="26" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                        <rect id="second-body" x="467.375" y="467.375" width="89.25" height="178.5" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                    </g>
+                    <g id="first-person">
+                        <circle id="first-head" cx="380.125" cy="621.875" r="26" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                        <rect id="first-body" x="334.5" y="378.125" width="89.25" height="178.5" style="fill:var(--foreground-color, rgb(235,235,235));"/>
+                    </g>
+                </symbol>
+                <symbol id="logo-symbol">
+                    <rect x="0" y="0" width="1024" height="1024" style="fill:none;"/>
+                    <use href="#wordmark-symbol" x="50" y="0" width="1331" height="100%" />
+                    <use href="#foundation-mark-symbol" x="1197.4" y="0" width="1899.3" height="100%" />
+                    <use href="#brandmark-symbol" x="3081.89" y="72" width="880" height="880" />                      
+                </symbol>
+            </svg>            
+        </div>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/brand">
+                            <span>Brand</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/typography">
+                            <span>Typography</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="titlebar">
+                <span class="title">Omnijar Foundation</span>
+                <svg viewBox="0 0 4096 1024">
+                    <use xlink:href="#logo-symbol"></use>
+                </svg>
+            </div>
+        </header>
         <main>
-            <article class="post">
-                <header>
-                    <h2>Human-Centric View on Data Sovereignty</h2>
-                    {{ with .Params.image }}
-                    <section>
-                        <!--img src="{{ . | absURL }}" alt="post-thumb"-->
-                         
-                    </section>
-                    {{ end }}
-                </header>
+            <article>
+                <h1>An Alliance Built on Human-Focused Drivers</h1>
                 <section>
+                    <h2>Introduction</h2>
                     <p>
                         In recent years data sovereignty has been gaining momentum as a foundational driver for various digital projects. If you missed our [introduction into data sovereignty](../introduction-to-data-sovereignty), we'd highly recommend you take the opportunity to read it before going further. We'll not explain data sovereignty in this article. 
                     </p>
@@ -28,11 +97,45 @@
                             <li>Politically-driven programs to develop regional competitive data markets to reduce the dependency on US tech companies.</li>
                         </ul>
                     </p>
+                    <figure>
+                        <img
+                        src="https://images.pexels.com/photos/290470/pexels-photo-290470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Dangers of a Federated Multiverse">
+                    </figure>
+                    <h2>Beyond The Normal</h2>
                     <p>
                         Although a lot of conversation has emerged from projects in both of these camps, those conversations rarely discuss human needs when it comes to data sovereignty.
                     </p>
                 </section>
             </article>
         </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/licenses">
+                            <span>Licenses</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/privacy">
+                            <span>Privacy</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/source">
+                            <span>Source</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="hanko">
+                <a href="/">
+                    <svg>
+                        <use href="#brandmark-symbol"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
     </body>
 </html>

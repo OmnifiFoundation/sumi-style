@@ -55,5 +55,10 @@ li {
 
 main {
     line-height: 1.5;
+    margin: var(--horizontal-spacing) var(--vertical-spacing);
+    max-width: 1400px;
+}
+
+main > * {
     margin: var(--vertical-spacing) var(--horizontal-spacing);
 }

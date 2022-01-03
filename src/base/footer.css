@@ -27,3 +27,7 @@ footer nav a {
     padding: 1em;
     text-decoration: none;
 }
+
+#hanko {
+    --foreground-color: var(--light-foreground-color);
+}

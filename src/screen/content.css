@@ -1,24 +1,37 @@
-main > article.feature {
+main {
+    margin: var(--vertical-spacing) auto;
+}
+
+main > article {
     display: grid;
-    min-height: 44vw;
     padding: 3rem;
 }
 
-main > article.feature > header {
+main > article:first-of-type {
+    min-height: 40vw;
+}
+
+main > article > header {
     grid-column: 1;
     grid-row: 1;
     align-self: end;
 }
 
-main > article:first-of-type > .media {
-    align-self: center;
-    grid-column: 2;
-    grid-row: 1 / 3;
+main > article:first-of-type > .media,
+main > article:first-of-type > figure  {
     height: 36vw;
     width: 36vw;
 }
 
-main > article:first-of-type > .content {
+main > article > .media,
+main > article > figure  {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 1 / 3;
+    min-width: 24vw;
+}
+
+main > article > .content {
     grid-column: 1;
     grid-row: 2;
     height: 100%;

@@ -1,0 +1,30 @@
+header > nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+header > nav ul li {
+    font-size: calc(0.7em + 0.5vh);
+    list-style-type: none;
+    margin: 0 var(--horizontal-spacing);
+    padding: 0;
+    transition: background-color .3s;
+}
+
+body > header a {
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 1.2;
+    text-decoration: none;
+}
+
+header > nav label {
+    display: none;
+}
+
+header > nav input:checked ~ ul {
+    max-height: 100%;
+}
+
+

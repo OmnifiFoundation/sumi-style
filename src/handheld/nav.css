@@ -1,0 +1,28 @@
+header > nav {
+    background-color: var(--background-color);
+    border-top: 1px solid darkgray;
+    bottom: 0;
+    height: 6em;
+    order: 2;
+    padding-bottom: env(safe-area-inset-bottom);
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header > nav > li {
+    line-height: 6em;
+}
+
+header a {
+    color: var(--secondary-color);
+    font-size: calc(1em + 0.5vh);
+    letter-spacing: 1.2;
+    text-decoration: none;
+}
