@@ -30,6 +30,10 @@ body > header img {
     stroke: var(--foreground-color) !important;
 }
 
+.titlebar {
+    margin-left: var(--horizontal-spacing);
+}
+
 .titlebar > .title {
     display: none;
 }

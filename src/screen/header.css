@@ -1,3 +1,7 @@
 body > header {
     justify-content: flex-end;
 }
+
+.titlebar {
+    margin: 0;
+}
