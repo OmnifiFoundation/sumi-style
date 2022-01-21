@@ -2,7 +2,7 @@ main > article {
     padding: 1.8em;
 }
 
-main > article.feature, main > article:nth-child(3n+2) {
+main > article.feature, main > article:nth-of-type(3n+2) {
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
                 0 4px 8px rgba(0,0,0,0.07), 
@@ -19,7 +19,7 @@ main > article.feature h2 {
     color: white;
 }
 
-h1, main > article:nth-child(3n) h2, main > article.post h2 {
+h1, main > article:nth-of-type(3n) h2, main > article.post h2 {
     background: linear-gradient(135deg, var(--secondary-color), var(--tertiary-color));
     background-clip: text;
     -webkit-background-clip: text;

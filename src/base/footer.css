@@ -1,4 +1,5 @@
 footer {
+    padding-bottom: calc(env(safe-inset-area-bottom, 3em) + 3em);
     text-align: center;
 }
 

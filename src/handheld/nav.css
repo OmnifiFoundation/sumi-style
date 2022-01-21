@@ -11,9 +11,13 @@ header > nav {
 }
 
 header > nav > ul {
+    block-size: 50vh;
     display: flex;
+    flex: 0 0 auto;
     flex-direction: row;
-    justify-content: space-around;
+    line-height: 3em;
+    margin-inline-start: 1em;
+    overflow-x: auto;
 }
 
 header > nav > li {
