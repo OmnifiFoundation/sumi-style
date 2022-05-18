@@ -17,7 +17,6 @@ body > header #org-name {
 
 body > header > div {
     float: left;
-    line-height: 3rem;
 }
 
 body > header img {

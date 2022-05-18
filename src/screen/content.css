@@ -7,10 +7,6 @@ main > article {
     padding: 3rem;
 }
 
-main > article:first-of-type {
-    min-height: 40vw;
-}
-
 main > article > header {
     grid-column: 1;
     grid-row: 1;
@@ -19,8 +15,8 @@ main > article > header {
 
 main > article:first-of-type > .media,
 main > article:first-of-type > figure  {
-    height: 36vw;
-    width: 36vw;
+    height: 24vw;
+    width: 24vw;
 }
 
 main > article > .media,

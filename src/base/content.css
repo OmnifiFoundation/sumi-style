@@ -3,7 +3,7 @@ main > article {
 }
 
 main > article.feature, 
-main > article:nth-of-type(odd) {
+main > article:nth-of-type(2n+3) {
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
                 0 4px 8px rgba(0,0,0,0.07), 
@@ -50,7 +50,7 @@ main > article > .content {
     order: 2;
 }
 
-main > article:not(.post) a:last-child {
+main > article:nth-of-type(2n+3) a:last-child {
     color: white;
     display: inline-block;
     font-weight: 600;
@@ -89,6 +89,12 @@ main > section.article-gallery > ul > * {
     flex-basis: calc((var(--threshold) - 100%) * 999);
     flex-grow: 1;
 }
+
+main > section.article-gallery > ul > :nth-last-child(n + 4),
+main > section.article-gallery > ul > :nth-last-child(n + 4) ~ * {
+    flex-basis: 100%;
+}
+    
 
 main section.article-gallery article {
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
