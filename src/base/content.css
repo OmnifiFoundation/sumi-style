@@ -77,17 +77,11 @@ main > section.article-gallery > nav > a {
 }
 
 main > section.article-gallery > ul {
-    --threshold: 45rem;
-    flex-wrap: wrap;
-    gap: 3em 3em;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 16rem), 1fr));
     list-style-type: none;
     padding-left: 0;
-    display: flex;
-}
-
-main > section.article-gallery > ul > * {
-    flex-basis: calc((var(--threshold) - 100%) * 999);
-    flex-grow: 1;
 }
 
 main > section.article-gallery > ul > :nth-last-child(n + 4),
@@ -95,7 +89,6 @@ main > section.article-gallery > ul > :nth-last-child(n + 4) ~ * {
     flex-basis: 100%;
 }
     
-
 main section.article-gallery article {
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
                 0 2px 4px rgba(0,0,0,0.07), 
@@ -146,7 +139,7 @@ main section.article-gallery li a {
 
 #articles > ul > :nth-last-child(n+5), 
 #articles > ul > :nth-last-child(n+5) ~ * {
-    flex-basis: 100%;
+    flex-basis: 40%;
 }
 
 main section.article-gallery#articles article > * {
@@ -173,6 +166,21 @@ main section.article-gallery#articles figure img {
     height: 100%;
     object-fit: cover;
     width: 100%;
+}
+
+/** Every Layout Stack used as former article gallery. **/
+main > section.feature-gallery > ul {
+    --threshold: 45rem;
+    flex-wrap: wrap;
+    gap: 3em 3em;
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+
+main > section.feature-gallery > ul > * {
+    flex-basis: calc((var(--threshold) - 100%) * 999);
+    flex-grow: 1;
 }
 
 article section figure {

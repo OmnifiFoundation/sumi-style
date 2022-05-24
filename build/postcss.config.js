@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require("fs");
 module.exports = (ctx) => {
     const prefix = ctx.env === "compat" ? "" : "";
 
@@ -7,10 +7,6 @@ module.exports = (ctx) => {
         parser: ctx.options.parser,
         plugins: {
             "postcss-import": { root: ctx.file.dirname },
-            "postcss-prefixer": {
-                prefix,
-                ignore: [/\[class\*=.*\]/],
-            },
             "postcss-preset-env": {
                 autoprefixer: {
                     cascade: false,

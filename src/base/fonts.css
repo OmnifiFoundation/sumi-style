@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'montserrat';
-    src: url("/fonts/montserrat/montserrat-italic-vf.woff2") format('woff2-variations');
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/montserrat-italic-vf.woff2") format("woff2-variations");
     font-weight: 125 950;
     font-stretch: 75% 125%;
     font-style: italic;
