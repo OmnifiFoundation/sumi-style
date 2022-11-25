@@ -12,6 +12,7 @@
     "files": [
         "build",
         "lib",
+        "fonts",
         "src"
     ],
     "engines": {
@@ -23,11 +24,11 @@
     "devDependencies": {
         "@csstools/normalize.css": "^12.0.0",
         "browser-sync": "^2.27.10",
-        "cssnano": "^5.1.8",
-        "postcss": "^8.4.14",
-        "postcss-cli": "^9.1.0",
-        "postcss-import": "^14.1.0",
-        "postcss-preset-env": "^7.5.0"
+        "cssnano": "^5.1.14",
+        "postcss": "^8.4.19",
+        "postcss-cli": "^10.0.0",
+        "postcss-import": "^15.0.0",
+        "postcss-preset-env": "^7.8.3"
     },
     "scripts": {
         "build": "npm run raw && npm run ci && npm run compat",
@@ -39,7 +40,7 @@
         "raw": "npx postcss src/*.css --config ./build --dir lib --no-map --env development"
     },
     "style": "dist/sumi.min.css",
-    "tetraConfig": {
+    "sumiConfig": {
         "prefix": "sumi__"
     }
 }

@@ -102,6 +102,7 @@ main section.article-gallery article {
     color: white;
     display: flex;
     flex-direction: column;
+    height: 100%;
     list-style-type: none;
     min-height: 28em;
     padding: 0.3em 1.5em;
@@ -183,11 +184,13 @@ main > section.feature-gallery > ul > * {
     flex-grow: 1;
 }
 
-article section figure {
+article figure,
+section figure {
     margin: 0;
     min-width: 24vw;
 }
 
-article section figure img {
+article figure img,
+section figure img {
     width: 100%;
 }

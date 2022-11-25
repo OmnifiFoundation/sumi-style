@@ -13,14 +13,14 @@ main > article > header {
     align-self: end;
 }
 
-main > article:first-of-type > .media,
-main > article:first-of-type > figure  {
+main > article.card:first-of-type > .media,
+main > article.card:first-of-type > figure  {
     height: 24vw;
     width: 24vw;
 }
 
-main > article > .media,
-main > article > figure  {
+main > article.card > .media,
+main > article.card > figure  {
     align-self: center;
     grid-column: 2;
     grid-row: 1 / 3;
